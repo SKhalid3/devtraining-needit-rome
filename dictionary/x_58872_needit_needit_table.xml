@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ddba23df1b8ee1101d0211bebd4bcb20" label="NeedIt - Table" max_length="40" name="x_58872_needit_needit_table" type="collection">
+        <element choice="1" default="Choice 1" label="Hello world" max_length="40" name="hello_world" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="255" name="number" read_only="true" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Legal 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Choice 1" label="Request type" max_length="40" name="reques_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="0" value="Legal 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="0" value="Legal 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="1" value="Other"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="Need room set up for meeting..." label="Short description" max_length="40" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date" max_length="40" name="u_glide_date_4" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for" max_length="40" name="u_requested_for" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Legal 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+    </element>
+</database>
